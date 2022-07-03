@@ -1,0 +1,64 @@
+.main {
+    height: 100vh;
+}
+
+.intro-text {
+    color: #fff;
+    background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 120%;
+    transition: all .5s ease-in-out;
+}
+
+p {
+    color: #fff;
+}
+
+.scroll-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.mouse {
+    width: 25px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: flex;
+}
+
+.mouse-wheel {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 1.5s linear infinite;
+}
+
+@keyframes move-wheel {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+}
+
+.contact-section {
+    background-color: #ffffff10;
+    border-radius: 20px;
+}
+
+.linkedIn {
+    color: #0077B5;
+}
