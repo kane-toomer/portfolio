@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Home/home.css';
+import '../../assets/css/main.css';
 import linkedInLogo from '../../assets/images/LinkedIN.svg';
 
 class Contact extends Component {
