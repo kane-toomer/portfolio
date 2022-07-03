@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './home.css';
-import linkedInLogo from '../../assets/images/LinkedIN.svg';
+import Contact from '../Contact/contact.js';
 import mememoji2 from '../../assets/images/mememoji2.svg';
 
 
@@ -21,13 +21,13 @@ class Home extends Component {
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                     <li className="nav-item pe-4">
-                                        <a className="nav-link" href="#">About</a>
+                                        <a className="nav-link" href="#about">About</a>
                                     </li>
                                     <li className="nav-item pe-4">
                                         <a className="nav-link" href="#">Resume</a>
                                     </li>
                                     <li className="nav-item pe-4">
-                                        <a className="nav-link" href="#">Projects</a>
+                                        <a className="nav-link" href="#projects">Projects</a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#contact">Contact</a>
@@ -43,49 +43,110 @@ class Home extends Component {
                             <div className="row">
                                 <div className="col">
                                     <p className='mt-5 pt-5 text-center intro-text'>Hey, my name is Kane!</p>
-                                    <p className='text-center intro-text'>I'm a <span>Full-Stack Developer.</span></p>
-                                    <p className='mt-3 text-center'>I'm also a designer, who enjoys creating functional but eye catching apps! </p>
+                                    <p className='text-center intro-text'>I'm a Software Developer.</p>
+                                    {/* <p className='mt-3 text-center'>I'm also an educator and lover of all things start ups!</p> */}
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className='scroll-indicator'>
-                        <span className="mouse">
-                            <span className="mouse-wheel"></span>
-                        </span>
+                    <div style={{ marginTop: 150 }}>
+                        <p className="text-center">Scroll Down</p>
+                        <div className='scroll-indicator'>
+                            <span className="mouse">
+                                <span className="mouse-wheel"></span>
+                            </span>
+                        </div>
                     </div>
 
-                </section>
-
-                {/* About Section */}
-                <section id="about" className="">
                 </section>
 
                 {/* Projects Section */}
-                <section></section>
+                <section id="projects" className='py-5 mb-5'>
+                    {/* Pill */}
+                    <div>
+                        <h1 className="intro-text text-center mb-5 pb-5">Projects</h1>
+                    </div>
+                    {/* Project 1 */}
+                    <div className='container-fluid project-section'>
+                        <div className='row'>
+                            <div className='col-6'>
 
-                {/* Contact Section */}
-                <section id="contact" className="py-5 mb-5 contact-section">
-                    <div className="container">
-                        <h1 className="text-center intro-text">I'm open to new possibilities!</h1>
-                        <p className="mt-3 text-center">Feel free to contact me by clicking on the button below or connecting with me via LinkedIn!</p>
-                        <div className="d-flex justify-content-center">
-                            <button className="btn btn-primary btn-lg mt-3">Contact Me</button>
+                            </div>
+                            <div className='col-6'>
+                                <div className='project-card'>
+                                    <h2 className='text-white text-center mb-4'>Zovy</h2>
+                                    <p><span className='card-titles'>About:</span></p>
+                                    <p><span className='card-titles'>Organization:</span> Personal Project</p>
+                                    <p><span className='card-titles'>Technologies:</span></p>
+                                    <p><span className='card-titles'>Duration:</span> </p>
+                                    <div className='mt-4 py-2'>
+                                        <a href='#' className='btn btn-primary me-3'>View Live Site</a>
+                                        <a href='#' className="btn btn-outline-light">View Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        {/* <p className="mt-3 text-center">or</p>
-                        <div className="d-flex justify-content-center">
-                            <a href="https://www.linkedin.com/in/kanetoomer/" className="btn btn-primary btn-lg mt-3 linkedIn">
-                                <img src={linkedInLogo} alt={'linked in logo'} />
-                            </a>
-                        </div> */}
+                    </div>
+
+                    {/* Project 2 */}
+                    <div className='container-fluid project-section'>
+                        <div className='row'>
+                            <div className='col-6'>
+                                <div className='project-card'>
+                                    <h2 className='text-white text-center mb-4'>Village</h2>
+                                    <p><span className='card-titles'>About:</span></p>
+                                    <p><span className='card-titles'>Organization:</span> Personal Project</p>
+                                    <p><span className='card-titles'>Technologies:</span></p>
+                                    <p><span className='card-titles'>Duration:</span> </p>
+                                    <div className='mt-4 py-2'>
+                                        <a href='#' className='btn btn-primary me-3'>View Live Site</a>
+                                        <a href='#' className="btn btn-outline-light">View Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-6'>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Project 3 */}
+                    <div className='container-fluid project-section pb-5'>
+                        <div className='row'>
+                            <div className='col-6'>
+
+                            </div>
+                            <div className='col-6'>
+                                <div className='project-card'>
+                                    <h2 className='text-white text-center mb-4'>Smart Brain</h2>
+                                    <p><span className='card-titles'>About:</span> Smart brain is a simple facial detection app that allows users to input an image url and using the Clarifai API, Smart Brain will detect a face and draw a box around it. This app is a full-stack project that stores a users credentials and keeps track of the number of entries each user has made ranking each user and comparing them to others in the database.</p>
+                                    <p><span className='card-titles'>Organization:</span> Bootcamp Project</p>
+                                    <p><span className='card-titles'>Technologies:</span>
+                                        <ul>
+                                            <li>React</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>Node.js</li>
+                                            <li>Express.js</li>
+                                            <li>PostgreSQL</li>
+                                            <li>Knex.js</li>
+                                            <li>Heroku</li>
+                                        </ul>
+                                    </p>
+                                    <p><span className='card-titles'>Duration:</span> 1 mo</p>
+                                    <div className='mt-4 py-2'>
+                                        <a href='#' className='btn btn-primary me-3'>View Live Site</a>
+                                        <a href='https://github.com/kane-toomer/smartbrain' className="btn btn-outline-light">View Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
-                {/* Footer */}
-                <footer>
-
-                </footer>
+                <Contact id='contact' />
             </div >
         );
     }
