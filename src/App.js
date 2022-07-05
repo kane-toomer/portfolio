@@ -4,7 +4,7 @@ import About from './components/About/about';
 function App() {
   return (
     <div className="App">
-      <Home />
+      <About />
     </div>
   );
 }

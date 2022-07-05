@@ -13,10 +13,7 @@ class Navigation extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item pe-4">
-                                <a className="nav-link" href="#about">About</a>
-                            </li>
-                            <li className="nav-item pe-4">
-                                <a className="nav-link" href="#">Resume</a>
+                                <a className="nav-link" href="#about">About Me</a>
                             </li>
                             <li className="nav-item pe-4">
                                 <a className="nav-link" href="#projects">Projects</a>

@@ -9,24 +9,27 @@ class Home extends Component {
         return (
             <div className="container">
                 {/* Main Section - what user sees when they first visit website. */}
-                <section className='main'>
+                <section>
                     {/* Navigation Bar */}
                     <Navigation />
 
                     {/* Introduction */}
-                    <div className="jumbotron mt-5 py-5">
+                    <div className="jumbotron mt-2 py-5">
                         <div className="container-fluid">
                             <div className="row">
                                 <div className="col">
                                     <p className='mt-5 pt-5 text-center intro-text'>Hey, my name is Kane!</p>
                                     <p className='text-center intro-text'>I'm a Software Developer.</p>
+                                    <div className="d-flex justify-content-center mt-5 mb-3">
+                                        <button className='btn btn-primary btn-lg'>Download My Resume</button>
+                                    </div>
                                     {/* <p className='mt-3 text-center'>I'm also an educator and lover of all things start ups!</p> */}
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div style={{ marginTop: 150 }}>
+                    <div style={{ margin: 'auto' }}>
                         <p className="text-center">Scroll Down</p>
                         <div className='scroll-indicator'>
                             <span className="mouse">
@@ -38,10 +41,10 @@ class Home extends Component {
                 </section>
 
                 {/* Projects Section */}
-                <section id="projects" className='py-5 mb-5'>
+                <section id="projects" className='container project-section'>
                     {/* Pill */}
                     <div>
-                        <h1 className="intro-text text-center mb-5 pb-5">Projects</h1>
+                        <h1 className="intro-text text-center">Projects</h1>
                     </div>
                     {/* Project 1 */}
                     <div className='container-fluid project-section'>
@@ -54,11 +57,20 @@ class Home extends Component {
                                     <h2 className='text-white text-center mb-4'>Zovy</h2>
                                     <p><span className='card-titles'>About:</span></p>
                                     <p><span className='card-titles'>Organization:</span> Personal Project</p>
-                                    <p><span className='card-titles'>Technologies:</span></p>
+                                    <p><span className='card-titles'>Made with:</span>
+                                        <ul>
+                                            <li>React.js</li>
+                                            <li>Node.js</li>
+                                            <li>Express.js</li>
+                                            <li>PostgreSQL</li>
+                                            <li>Knex.js</li>
+                                            <li>Heroku</li>
+                                        </ul>
+                                    </p>
                                     <p><span className='card-titles'>Duration:</span> </p>
                                     <div className='mt-4 py-2'>
-                                        <a href='#' className='btn btn-primary me-3'>View Live Site</a>
-                                        <a href='#' className="btn btn-outline-light">View Source Code</a>
+                                        <a href='#' className='btn btn-primary me-3 mb-2'>View Live Site</a>
+                                        <a href='#' className="btn btn-outline-light mb-2">View Source Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -76,11 +88,20 @@ class Home extends Component {
                                     <h2 className='text-white text-center mb-4'>Village</h2>
                                     <p><span className='card-titles'>About:</span></p>
                                     <p><span className='card-titles'>Organization:</span> Personal Project</p>
-                                    <p><span className='card-titles'>Technologies:</span></p>
+                                    <p><span className='card-titles'>Made with:</span>
+                                        <ul>
+                                            <li>React.js</li>
+                                            <li>Node.js</li>
+                                            <li>Express.js</li>
+                                            <li>PostgreSQL</li>
+                                            <li>Knex.js</li>
+                                            <li>Heroku</li>
+                                        </ul>
+                                    </p>
                                     <p><span className='card-titles'>Duration:</span> </p>
                                     <div className='mt-4 py-2'>
-                                        <a href='#' className='btn btn-primary me-3'>View Live Site</a>
-                                        <a href='#' className="btn btn-outline-light">View Source Code</a>
+                                        <a href='#' className='btn btn-primary me-3 mb-2'>View Live Site</a>
+                                        <a href='#' className="btn btn-outline-light mb-2">View Source Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -98,12 +119,9 @@ class Home extends Component {
                                     <h2 className='text-white text-center mb-4'>Smart Brain</h2>
                                     <p><span className='card-titles'>About:</span> Smart brain is a simple facial detection app that allows users to input an image url and using the Clarifai API, Smart Brain will detect a face and draw a box around it. This app is a full-stack project that stores a users credentials and keeps track of the number of entries each user has made ranking each user and comparing them to others in the database.</p>
                                     <p><span className='card-titles'>Organization:</span> Bootcamp Project</p>
-                                    <p><span className='card-titles'>Technologies:</span>
+                                    <p><span className='card-titles'>Made with:</span>
                                         <ul>
-                                            <li>React</li>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>JavaScript</li>
+                                            <li>React.js</li>
                                             <li>Node.js</li>
                                             <li>Express.js</li>
                                             <li>PostgreSQL</li>
@@ -113,8 +131,8 @@ class Home extends Component {
                                     </p>
                                     <p><span className='card-titles'>Duration:</span> 2 wks</p>
                                     <div className='mt-4 py-2'>
-                                        <a href='#' className='btn btn-primary me-3'>View Live Site</a>
-                                        <a href='https://github.com/kane-toomer/smartbrain' className="btn btn-outline-light">View Source Code</a>
+                                        <a href='#' className='btn btn-primary me-3 mb-2'>View Live Site</a>
+                                        <a href='https://github.com/kane-toomer/smartbrain' className="btn btn-outline-light mb-2">View Source Code</a>
                                     </div>
                                 </div>
                             </div>
