@@ -37,8 +37,8 @@ class About extends Component {
                                 {/* Paragraph 4 */}
                                 <p className='mb-4'>I think it's safe to say I think I should have seen this coming. However, when you are young, sometimes...
                                 </p>
-                                <p className='text-center'>"you have to go through it, to get to it"</p>
-                                <p className='text-center mb-5'>- I have no clue who's quote this is... lol</p>
+                                <p className='text-center'>“Stupid is as stupid does.”</p>
+                                <p className='text-center mb-5'>- Forrest Gump</p>
 
                                 <div className='project-card'>
                                     <div className='row'>
@@ -76,6 +76,10 @@ class About extends Component {
                                             </p>
                                         </div>
                                     </div>
+                                </div>
+
+                                <div className="d-flex justify-content-center mt-5 mb-3">
+                                    <button className='btn btn-primary btn-lg'>Download My Resume</button>
                                 </div>
                             </div>
                         </div>
