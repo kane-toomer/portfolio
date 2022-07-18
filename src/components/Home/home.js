@@ -3,6 +3,8 @@ import '../../assets/css/main.css';
 import Contact from '../Contact/contact.js';
 import Navigation from '../Navigation/navigation.js';
 
+import smartbrain from '../../assets/images/smartbrain.svg';
+
 
 class Home extends Component {
     render() {
@@ -112,7 +114,7 @@ class Home extends Component {
                     <div className='container-fluid project-section pb-5'>
                         <div className='row'>
                             <div className='col-xs-12 col-lg-6'>
-
+                                <img src={smartbrain} alt={'mememoji of me in clouds'} width="100%" style={{ borderRadius: '10px' }} />
                             </div>
                             <div className='col-xs-12 col-lg-6'>
                                 <div className='project-card'>
@@ -131,7 +133,7 @@ class Home extends Component {
                                     </p>
                                     <p><span className='card-titles'>Duration:</span> 2 wks</p>
                                     <div className='mt-4 py-2'>
-                                        <a href='#' className='btn btn-primary me-3 mb-2'>View Live Site</a>
+                                        <a href='https://kane-smart-brain.herokuapp.com/' className='btn btn-primary me-3 mb-2'>View Live Site</a>
                                         <a href='https://github.com/kane-toomer/smartbrain' className="btn btn-outline-light mb-2">View Source Code</a>
                                     </div>
                                 </div>
